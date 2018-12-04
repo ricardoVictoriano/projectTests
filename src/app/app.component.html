@@ -1,20 +1,67 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
 
+  <div class="navBar">
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+  </div>
+
+
+  <div class="mainDiv">
+
+    <div id="div1" class="resizeDiv1 childDiv">
+      <h1 class="title">HTML + CSS + JS</h1>
+      <!-- <button class="btnExpand" (click)="expandDiv1()"> Expand </button> -->
+      <p class="someContent">Those are the combination that are being used for morde than 20 years to create Websites
+        and
+        Web Apps</p>
+      <p class="someContent">The HTML is the markup language, the CSS is the the part that styles the multiples
+        components in the HTML. And finally, the JavaScript is the language that is used to put functionality in the
+        Web
+        contents</p>
+      <img class="clicar" src="../assets/imgs/htmlCssJs.png" alt="The logo of HTML + CSS + JS Combination">
+    </div>
+
+    <div id="div2" class="resizeDiv2 childDiv">
+      <h1 class="title">Java</h1>
+      <button id="openLeft" class="btnExpand"> >> </button>
+      <button id="openRight" class="btnExpand"> << </button>
+      <button  (click)="expandDiv2()"> Expand </button>
+      <p class="someContent">Java is an Object Orientend language created in 1995, and its considered one of the most
+        importants programming languages of all time.</p>
+      <p class="someContent"> It is intended to let application developers "write once, run anywhere" (WORA), meaning
+        that compiled Java code can run on all platforms that support Java without the need for recompilation.</p>
+      <img class="clicar" src="../assets/imgs/java.png" alt="Java famous logo">
+    </div>
+
+    <div id="div3" class="resizeDiv3 childDiv">
+      <h1 class="title">C++</h1>
+      <!-- <button class="btnExpand" (click)="expandDiv3()"> Expand </button> -->
+      <p class="someContent">C++ is a general-purpose programming language created in 1985.</p>
+      <p class="someContent">It was designed with a bias toward system programming and embedded, resource-constrained
+        and
+        large systems, with performance, efficiency and flexibility of use as its design highlights</p>
+      <img class="clicar" src="../assets/imgs/c++.png" alt="C++ new logo">
+    </div>
+
+  </div>
+
+  <div class="rodape"></div>
+</div>
